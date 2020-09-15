@@ -2,10 +2,6 @@ sudo: required
 services:
     - docker
 
-script:
-    - docker run -p 8080:8080 -e "MB_KEY=$MB_KEY" machinebox/tagbox
-    - travis_terminate 0
-
 deploy:
     provider: elasticbeanstalk
     access_key_id: $AWS_ACCESS_KEY

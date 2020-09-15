@@ -1,3 +1,3 @@
-FROM alpine
-
+FROM machinebox/tagbox
+ENV MB_KEY=Njk3MjQ2YzBhZDZhMjA2MmI1YjVkZGYyNTRhMjEyYmY.bGR2yeolLI3aniiR5zULxU2vF54QpUE-NrwaUZusabMg4HEviCDSlq5P9Z2bK1M6jvU9ttoy2tNRTIfcEiPElg
 EXPOSE 80
