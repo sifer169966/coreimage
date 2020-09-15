@@ -4,6 +4,7 @@ services:
 
 script:
     - docker run -p 8080:8080 -e "MB_KEY=$MB_KEY" machinebox/tagbox
+    - travis_terminate 0
 
 deploy:
     provider: elasticbeanstalk
