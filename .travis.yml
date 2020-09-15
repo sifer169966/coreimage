@@ -1,0 +1,18 @@
+sudo: required
+services:
+    - docker
+
+script:
+    - docker run -p 8080:8080 -e "MB_KEY=$MB_KEY" machinebox/tagbox
+
+deploy:
+    provider: elasticbeanstalk
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    region: "us-east-2"
+    app: "core-image"
+    env: "CoreImage-env"
+    bucket_name: "elasticbeanstalk-us-east-2-138086560928"
+    bucket_path: "core-image"
+    on:
+    branch: master
