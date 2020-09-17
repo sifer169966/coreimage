@@ -1,0 +1,9 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image":{
+        "Name": "machinebox/tagbox"
+    },
+    "Ports":[
+        {"ContainerPort": "80"}
+    ]
+}
